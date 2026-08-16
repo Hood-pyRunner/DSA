@@ -4,7 +4,7 @@ public:
         int n = s.length();
         int count = 0, max = 0;
         int i = 0, j = 0;
-        int f[50] = {};
+        int f[50];
 
         while (j < n) {
             f[s[j] - 'a']++;
