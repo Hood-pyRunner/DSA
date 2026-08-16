@@ -4,13 +4,13 @@ public:
         int n = s.length();
         int count = 0, max = 0;
         int i = 0, j = 0;
-        int freq[50] = {};
+        int f[50] = {};
 
         while (j < n) {
-            freq[s[j] - 'a']++;
+            f[s[j] - 'a']++;
             count++;
-            while (freq[s[j] - 'a'] > 2) {
-                freq[s[i] - 'a']--;
+            while (f[s[j] - 'a'] > 2) {
+                f[s[i] - 'a']--;
                 i++;
                 count--;
             }
