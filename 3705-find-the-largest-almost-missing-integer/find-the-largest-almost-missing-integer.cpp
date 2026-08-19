@@ -2,12 +2,12 @@ class Solution {
 public:
     int largestInteger(vector<int>& nums, int k) {
         int n = nums.size();
-        int a = -1, c, l;
+        int a = -1, c, i, j, l;
         bool f;
 
-        for (int i = 0; i < n; i++) {
+        for (i = 0; i < n; i++) {
             c = 0;
-            for (int j = 0; j <= n - k; j++) {
+            for (j = 0; j <= n - k; j++) {
                 f = false;
                 for (l = j; l < j + k; l++) {
                     if (nums[l] == nums[i]) {
