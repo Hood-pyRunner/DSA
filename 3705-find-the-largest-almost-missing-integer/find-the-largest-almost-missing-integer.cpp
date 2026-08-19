@@ -2,13 +2,14 @@ class Solution {
 public:
     int largestInteger(vector<int>& nums, int k) {
         int n = nums.size();
-        int a = -1;
+        int a = -1, c, l;
+        bool f;
 
         for (int i = 0; i < n; i++) {
-            int c = 0;
+            c = 0;
             for (int j = 0; j <= n - k; j++) {
-                bool f = false;
-                for (int l = j; l < j + k; l++) {
+                f = false;
+                for (l = j; l < j + k; l++) {
                     if (nums[l] == nums[i]) {
                         f = true;
                         break;
