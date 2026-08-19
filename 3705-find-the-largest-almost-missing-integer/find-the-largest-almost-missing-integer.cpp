@@ -15,7 +15,7 @@ public:
                         break;
                     }
                 }
-                if (f) {
+                if (f == true) {
                     c++;
                 }
             }
